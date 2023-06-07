@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="evo-calendar.min.css">
+    <link rel="stylesheet" href="evo-calendar.royal-navy.min.css">
+
+
+</head>
+<body>
+    
+<div class="hero">
+  <h6>Denne kalender er benyttet til SnackReload og Proteingigantens sociale medier <br>
+    <div class="cirkel-1"></div> = SnackReload
+    <div class="cirkel-2"></div> = Proteingiganten
+    <div class="cirkel-3"></div> = Begge
+  </h6>
+
+    <div id="calendar"></div>
+    
+   
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="evo-calendar.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+    $('#calendar').evoCalendar({
+        theme:"Royal Navy",
+        calendarEvents: [
+      {
+        id: 'event1', // Event's ID (required)
+        name: "New Year", // Event name (required)
+        date: "January/1/2020", // Event date (required)
+        description:"Nytårs Aften",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+    
+    
+      // Instagram 
+
+
+      {
+        name: "Aalborg karneval",
+        date: ["May/27/2023", "May/27/2023"], // Date range
+        description: "Dagen inden Aalborg karneval (Vigtig) Bestille varer hjem til karneval, uploade relevant content på Instagram og Facebook (Reel ikke nødvendig) Min. 3 opslag"  , // Event description (optional)
+        type: "event",
+        color: "rgb(237, 16, 16)", // Event custom color (optional)
+      },
+      {
+        name: "Aalborg karneval",
+        date: ["May/28/2023", "May/28/2023"], // Date range
+        description: "Dagen på karneval, lave tilbudsannoncer på produkter som ikke blev solgt dagen inden, gå ned i pris evt, folk holder stadig forfest, så prøve at lave lignende content, men med fokus på tilbudannoncering"  , // Event description (optional)
+        type: "event",
+        color: "rgb(237, 16, 16)", // Event custom color (optional)
+      },
+      {
+        name: "Sommerkampagne",
+        date: ["June/1/2023", "June/1/2023"], // Date range
+        description: "Tilbudskampagne /Sommer tema, fokus på bestemte varer som bliver solgt under sommerperioden", // Event description (optional)
+        type: "event",
+        color: "rgb(237, 16, 16)" // Event custom color (optional)
+      },
+      {
+        name: "Nye varer på lager denne dag!(Breezer/Smirnoff)",
+        date: ["June/2/2023", "june/2/2023"], // Date range
+        description:  "Vi får levering af breezer og smirnoff ice, forbedrede sommer reklamer som har fokus på at varene er kommet på hylderne" , // Event description (optional)
+        type: "event",
+        color: "rgb(237, 16, 16)" // Event custom color (optional)
+      },
+      {
+        name: "Produkt levering",
+        date: ["June/5/2023", "June/5/2023"], // Date range
+        description:"Vi får levering af Barebells og Vitamin well, evt lave et visuelt billede til instagram omkring restock af produkterne"  , // Event description (optional)
+        type: "event",
+        color: "rgb(29, 106, 201)" // Event custom color (optional)
+      },
+      {
+        name: "Nye valgpakker",
+        date: ["June/6/2023", "June/6/2023"], // Date range
+        description: "Pakketilbud (Vi laver nye pakker man kan vælge mellem) fremvisning af de nye pakker(evt rabat hvis det giver mening)", // Event description (optional)
+        type: "event",
+        color: "rgb(237, 16, 16)" // Event custom color (optional)
+      },
+      {
+        name: "Restevarer/Svære at få solgt",
+        date: ["June /7/2023", "June/7/2023"], // Date range
+        description: "Fokus på produkter vi har svære ved at sælge (STATE,VOLU,NUTRAMINO)", // Event description (optional)
+        type: "event",
+        color: "rgb(29, 106, 201)" // Event custom color (optional)
+      },
+      {
+        name: "Sommerkampagne",
+        date: ["June /8/2023", "June/8/2023"], // Date range
+        description: "Valgfri sommerkampagne med et valgfrit produkt (Kan være populære produkter eller nye produkter)", // Event description (optional)
+        type: "event",
+        color: "rgb(29, 106, 201)" // Event custom color (optional)
+      },
+      {
+        name: "Tømmermændpakker i fokus",
+        date: ["June/10/2023", "June/10/2023"], // Date range
+        description: "Tømmermænd reklame (Fokus på tømmermændspakker, evt lave et opslag omkring tømmermændspakkerne, varer som frysepizza,sodavand etc)", // Event description (optional)
+        type: "event",
+        color: "rgb(237, 16, 16)" // Event custom color (optional)
+      },
+      {
+        name: "Målgruppe orinteret opslag ",
+        date: ["June/11/2023", "June/11/2023"], // Date range
+        description: "Opslag som omhandler proteindrikke og proteinbare i farten, noget med en ny uge begynder, men det stadig er vigtig at få de rigtige proteiner til træningen", // Event description (optional)
+        type: "event",
+        color: "rgb(29, 106, 201)" // Event custom color (optional)
+      },
+      {
+        name: "Restprodukter ",
+        date: ["June/18/2023", "June/23/2023"], // Date range
+        description: "Opslag orinteret til salg af restprodukter, Genbrug af gamle opslag med samme målsætning" , // Event description (optional)
+        type: "event",
+        color: "rgb(183, 29, 210)" // Event custom color (optional)
+      }
+     
+    ]
+
+
+    })
+})
+</script>
+
+</body>
+</html>
